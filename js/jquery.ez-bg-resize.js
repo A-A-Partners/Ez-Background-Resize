@@ -22,7 +22,7 @@
 			jqez.img = [tmp_img]
 		}
 		
-		$("<img/>").attr("src", jqez.img).load(function() {
+		$("<img/>").attr("src", jqez.img).on("load", function() {
 			jqez.width = this.width;
 			jqez.height = this.height;
 			
